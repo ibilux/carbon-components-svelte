@@ -458,7 +458,7 @@
                     }}"
                   />
                 {:else if overflowMenu}
-                  <svelte:component this={OverflowMenu} bind:parentRef={tRef}>
+                  <svelte:component size="sm" this={OverflowMenu} bind:parentRef={tRef}>
                     <slot name="overflowMenu" row="{row}" />
                   </svelte:component>
                 {:else}
