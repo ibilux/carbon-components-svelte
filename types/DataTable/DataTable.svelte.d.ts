@@ -129,6 +129,12 @@ export interface DataTableProps
   radio?: boolean;
 
   /**
+   * Set to `true` for the overflow menu selection variant
+   * @default false
+   */
+   overflowMenu?: boolean;
+
+  /**
    * Set to `true` for the selectable variant
    * Automatically set to `true` if `radio` or `batchSelection` are `true`
    * @default false
