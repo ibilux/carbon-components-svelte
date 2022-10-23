@@ -201,7 +201,7 @@
     expandable = true;
     expanded = expandedRowIds.length === expandableRowIds.length;
   }
-  $: if (radio || batchSelection || OverflowMenu) selectable = true;
+  $: if (radio || batchSelection || overflowMenu) selectable = true;
   $: headerKeys = headers.map(({ key }) => key);
   $: tableCellsByRowId = rows.reduce((rows, row) => {
     rows[row.id] = headerKeys.map((key, index) => ({
@@ -314,7 +314,7 @@
           </th>
         {/if}
         {#if selectable && !batchSelection}
-          <th scope="col"></th>
+          <th scope="col" style="width: var(--cds-spacing-08);"></th>
         {/if}
         {#if batchSelection && !radio && !overflowMenu}
           <th scope="col" class:bx--table-column-checkbox="{true}">
