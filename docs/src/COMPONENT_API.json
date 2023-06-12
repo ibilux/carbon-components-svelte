@@ -1743,6 +1743,12 @@
           "default": true,
           "fallback": "{itemToString(item)}",
           "slot_props": "{ item: ComboBoxItem; index: number }"
+        },
+        {
+          "name": "titleText",
+          "default": false,
+          "fallback": "{titleText}",
+          "slot_props": "{}"
         }
       ],
       "events": [
@@ -7354,6 +7360,12 @@
           "default": true,
           "fallback": "{itemToString(item)}",
           "slot_props": "{ item: MultiSelectItem; index: number }"
+        },
+        {
+          "name": "titleText",
+          "default": false,
+          "fallback": "{titleText}",
+          "slot_props": "{}"
         }
       ],
       "events": [
@@ -8515,6 +8527,18 @@
           "description": "Specify the backward button text",
           "type": "string",
           "value": "\"Previous page\"",
+          "isFunction": false,
+          "isFunctionDeclaration": false,
+          "isRequired": false,
+          "constant": false,
+          "reactive": false
+        },
+        {
+          "name": "tooltipPosition",
+          "kind": "let",
+          "description": "Set the position of the tooltip relative to the pagination buttons.",
+          "type": "\"top\" | \"right\" | \"bottom\" | \"left\" | \"outside\" | \"inside\"",
+          "value": "\"bottom\"",
           "isFunction": false,
           "isFunctionDeclaration": false,
           "isRequired": false,
